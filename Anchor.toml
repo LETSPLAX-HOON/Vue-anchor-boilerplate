@@ -1,0 +1,14 @@
+[features]
+seeds = false
+[programs.localnet]
+vue_anchor_boilerplate = "ASTa2tZB6ghqSzNGz6FeZnhfsQHiPJxDxi1dT6p5cLFF"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "localnet"
+wallet = "/Users/hoon/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./anchor.test.tsconfig.json -t 1000000 tests/**/*.ts"
